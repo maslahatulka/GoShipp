@@ -75,6 +75,40 @@ body {
   transition: all 0.2s;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 50px;
+}
+
+.home__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.home__right {
+  width: 40%;
+}
+
+.home__right img {
+  width: 100%;
+}
+
+.home__left-title {
+  font-size: var(--text-7xl);
+}
+
+.home__left-title span {
+  color: var(--primary);
+}
+
+.home__left-description {
+  font-size: var(--text-2xl);
+}
+
 .header {
   display: flex;
 }
