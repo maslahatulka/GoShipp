@@ -58,6 +58,8 @@
 .form textarea {
   margin-top: 20px;
   height: 250px;
+  font-size: var(--text-2xl);
+  padding: 20px;
 }
 
 .form__button {
