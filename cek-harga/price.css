@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary: #4540db;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+}
+
+.header__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__price-logo {
+  width: 65%;
+}
+
+.header__price-logo img {
+  width: 100%;
+}
+
+.header__price-description {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  width: 35%;
+}
+
+.header__price-description h1 {
+  margin-bottom: 20px;
+  font-size: var(--text-5xl);
+}
+
+.header__price-description p {
+  font-size: var(--text-2xl);
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: var(--text-4xl);
+}
+
+.form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__box input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form__box label {
+  font-size: var(--text-2xl);
+}
+
+.form__box label::after {
+  content: "*";
+  color: red;
+}
+
+.form__box input:focus {
+  border: 2px solid var(--primary);
+}
+
+.form__button {
+  margin: 20px 0;
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: var(--text-xl);
+  border-radius: 10px;
+}
+
+.form__button:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  transition: all 0.3s;
+}

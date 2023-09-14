@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary: #4540db;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+}
+
+/* start style about */
+.header__about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__about-logo {
+  width: 65%;
+}
+
+.header__about-logo img {
+  width: 100%;
+}
+
+.header__about-description {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  width: 35%;
+}
+
+.header__about-description h1 {
+  margin-bottom: 20px;
+  font-size: var(--text-5xl);
+}
+
+.header__about-description p {
+  font-size: var(--text-2xl);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  padding: 60px 100px;
+}
+
+.about h1 {
+  margin-top: 50px;
+  font-size: var(--text-5xl);
+}
+
+.about p {
+  font-size: var(--text-2xl);
+}
+
+.management h1 {
+  text-align: center;
+  padding: 50px;
+  font-size: var(--text-5xl);
+}
+
+.management__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 100px;
+  gap: 100px;
+}
+
+.management__card {
+  box-shadow: 0 4px 8px 0;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.management__card img {
+  border-radius: 10px;
+}
+.management__card:hover {
+  box-shadow: 10px 10px 5px var(--primary);
+}
+
+.management__card-text {
+  text-align: center;
+  padding: 20px 0px;
+}
+/* end style about */

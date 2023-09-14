@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary: #4540db;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+}
+
+.header__service {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__service-logo {
+  width: 65%;
+}
+
+.header__service-logo img {
+  width: 100%;
+}
+
+.header__service-description {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  width: 35%;
+}
+
+.header__service-description h1 {
+  margin-bottom: 20px;
+  font-size: var(--text-5xl);
+}
+
+.header__service-description p {
+  font-size: var(--text-2xl);
+}
+
+.service {
+  padding: 100px 200px;
+}
+
+.service__content-description {
+  font-size: var(--text-2xl);
+  text-align: center;
+  padding: 100px;
+}
+
+.service__content-description > * {
+  margin: 20px 0px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.service__content {
+  display: flex;
+  justify-content: space-between;
+}
