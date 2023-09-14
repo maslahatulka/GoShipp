@@ -22,14 +22,16 @@
       </ul>
     </nav>
 
-    <header class="header__price">
-      <div class="header__price-logo">
+    <header class="header">
+      <section class="header__image">
         <img src="/src/assets/price/priceLogo.svg" alt="logo price" />
-      </div>
-      <div class="header__price-description">
-        <h1>Ongkir Hemat</h1>
-        <p>Dengan pengiriman yang lebih cepat #GoShippinAja</p>
-      </div>
+      </section>
+      <section class="header__information">
+        <h1 class="information__title">Ongkir Hemat</h1>
+        <p class="information__description">
+          Dengan pengiriman yang lebih cepat #GoShippinAja
+        </p>
+      </section>
     </header>
 
     <section class="container">
@@ -48,22 +50,32 @@
         </div>
 
         <div class="form__box">
-          <label for="">Tujuan</label>
+          <label for="tujuan">Tujuan</label>
           <input
             required
             type="text"
+            id="tujuan"
+            name="tujuan"
             placeholder="Masukkan tujuan pengiriman"
           />
         </div>
 
         <div class="form__box">
-          <label for="">Berat</label>
-          <input type="number" placeholder="Masukkan berat barang" required />
+          <label for="berat">Berat</label>
+          <input
+            type="number"
+            id="berat"
+            name="berat"
+            placeholder="Masukkan berat barang"
+            required
+          />
         </div>
 
         <button type="submit" class="form__button">Cek Harga</button>
       </form>
     </section>
+
+    <section id="result"></section>
 
     <footer class="footer">
       <section class="footer__name">
@@ -206,5 +218,6 @@
       </section>
       <section class="footer__form"><h1>#GoShippinAaja</h1></section>
     </footer>
+    <script src="/src/javascript/modules/sendForm.js"></script>
   </body>
 </html>

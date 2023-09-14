@@ -17,38 +17,6 @@
   --text-9xl: 8rem;
 }
 
-.header__price {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__price-logo {
-  width: 65%;
-}
-
-.header__price-logo img {
-  width: 100%;
-}
-
-.header__price-description {
-  background-color: var(--primary);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 50px;
-  width: 35%;
-}
-
-.header__price-description h1 {
-  margin-bottom: 20px;
-  font-size: var(--text-5xl);
-}
-
-.header__price-description p {
-  font-size: var(--text-2xl);
-}
-
 .container h1 {
   text-align: center;
   margin-top: 50px;
@@ -75,6 +43,7 @@
   padding: 20px;
   border-radius: 8px;
   outline: none;
+  font-size: var(--text-xl);
 }
 
 .form__box label {

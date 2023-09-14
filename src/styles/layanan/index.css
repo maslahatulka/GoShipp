@@ -17,38 +17,6 @@
   --text-9xl: 8rem;
 }
 
-.header__service {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__service-logo {
-  width: 65%;
-}
-
-.header__service-logo img {
-  width: 100%;
-}
-
-.header__service-description {
-  background-color: var(--primary);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 50px;
-  width: 35%;
-}
-
-.header__service-description h1 {
-  margin-bottom: 20px;
-  font-size: var(--text-5xl);
-}
-
-.header__service-description p {
-  font-size: var(--text-2xl);
-}
-
 .service {
   padding: 100px 200px;
 }

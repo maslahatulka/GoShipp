@@ -126,3 +126,9 @@ button:hover {
 textarea {
   height: 90px;
 }
+
+.maps {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
