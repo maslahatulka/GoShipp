@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
+    <nav class="navbar" id="navbar">
+      <a href="/" class="navbar__logo"><span>Go</span>Shipp</a>
+
+      <ul class="navbar__menu">
+        <a href="/" class="navbar__menu-item">Beranda</a>
+        <a href="/tentang/" class="navbar__menu-item">Tentang</a>
+        <a href="/layanan/" class="navbar__menu-item">Layanan</a>
+        <a href="/cek-harga/" class="navbar__menu-item">Cek Harga</a>
+        <a href="/lacak/" class="navbar__menu-item">Lacak Paket</a>
+        <a href="/contact/" class="navbar__menu-item">Hubungi Kami</a>
+        <a href="/login/" class="navbar__menu-item">Login</a>
+      </ul>
+    </nav>
+
     <div>
-      <h1>Lengkapi detil pengiriman</h1>
+      <h1>PENGIRIMAN</h1>
       <div id="multi-step-form-container">
         <!-- Form Steps / Progress Bar -->
         <ul
@@ -24,7 +38,7 @@
               <span class="form-stepper-circle">
                 <span>1</span>
               </span>
-              <div class="label">Account Basic Details</div>
+              <div class="label">Detail Pengiriman</div>
             </a>
           </li>
           <!-- Step 2 -->
@@ -36,7 +50,7 @@
               <span class="form-stepper-circle text-muted">
                 <span>2</span>
               </span>
-              <div class="label text-muted">Social Profiles</div>
+              <div class="label text-muted">Ringkasan</div>
             </a>
           </li>
           <!-- Step 3 -->
@@ -48,7 +62,7 @@
               <span class="form-stepper-circle text-muted">
                 <span>3</span>
               </span>
-              <div class="label text-muted">Personal Details</div>
+              <div class="label text-muted">Pembayaran</div>
             </a>
           </li>
         </ul>
@@ -61,55 +75,201 @@
         >
           <!-- Step 1 Content -->
           <section id="step-1" class="form-step">
-            <h2 class="font-normal">Account Basic Details</h2>
+            <h2 class="font-normal">Lengkapi Detail Pengirim</h2>
+            <br />
             <!-- Step 1 input fields -->
-            <div class="mt-3">Step 1 input fields goes here..</div>
+            <form class="form__kirim">
+              <div class="kirim__box">
+                <label for="nama">Nama Pengirim</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan nama pengirim"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <label for="no.tlpn">Nomor Telepon Pengirim</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="no.tlpn"
+                  name="no.tlpn"
+                  placeholder="Masukkan nomor telepon pengirim"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <label for="email">Email Pengirim</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan email pengirim"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <label for="address">Alamat Pengirim</label>
+                <input
+                  class="form__input"
+                  type="address"
+                  id="address"
+                  name="address"
+                  placeholder="Masukkan alamat pengirim"
+                  required
+                />
+              </div>
+            </form>
+
+            <div class="mt-3">Lengkapi Detail Penerima</div>
+            <br />
+            <form class="form__kirim">
+              <div class="kirim__box">
+                <label for="nama">Nama Penerima</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan nama penerima"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <label for="no.tlpn">Nomor Telepon Penerima</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="no.tlpn"
+                  name="no.tlpn"
+                  placeholder="Masukkan nomor telepon penerima"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <label for="email">Email Penerima</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan email penerima"
+                  required
+                />
+              </div>
+            </form>
+
+            <div class="mt-3">Lengkapi Detail Barang</div>
+            <br />
+            <form class="form__kirim">
+              <div class="kirim__box">
+                <label for="date">Waktu Penjemputan</label>
+                <input
+                  class="form__input"
+                  type="date"
+                  id="date"
+                  name="date"
+                  placeholder="Masukkan waktu penjemputan"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <label for="date">Estimaasi Tiba</label>
+                <input
+                  class="form__input"
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                />
+              </div>
+
+              <div class="kirim__box">
+                <p>Ukuran Paket</p>
+                <form class="radio__form">
+                  <input type="radio" name="size" id="small" />
+                  <label for="small">Small</label>
+                  <br />
+                  <input type="radio" name="size" id="medium" />
+                  <label for="medium">Medium</label>
+                  <br />
+                  <input type="radio" name="size" id="large" />
+                  <label for="large">Large</label>
+                </form>
+              </div>
+
+              <div class="kirim__box">
+                <p>Tipe Layanan</p>
+                <form class="radio__form">
+                  <input type="radio" name="service" id="sameday" />
+                  <label for="sameday">SGoShipp Someday</label>
+                  <br />
+                  <input type="radio" name="service" id="instant" />
+                  <label for="instan">Instant GoShipp</label>
+                  <br />
+                  <input type="radio" name="service" id="big" />
+                  <label for="big">GoShippBix</label>
+                  <br />
+                </form>
+              </div>
+            </form>
+
             <div class="mt-3">
               <button
                 class="button btn-navigate-form-step"
                 type="button"
                 step_number="2"
               >
-                Next
+                Selanjutnya
               </button>
             </div>
           </section>
           <!-- Step 2 Content, default hidden on page load. -->
           <section id="step-2" class="form-step d-none">
-            <h2 class="font-normal">Social Profiles</h2>
+            <h2 class="font-normal">Ringkasan Pengiriman</h2>
             <!-- Step 2 input fields -->
-            <div class="mt-3">Step 2 input fields goes here..</div>
+            <div class="mt-3">Menampilkan ringkasan pilihan user</div>
             <div class="mt-3">
               <button
                 class="button btn-navigate-form-step"
                 type="button"
                 step_number="1"
               >
-                Prev
+                Sebelumnya
               </button>
               <button
                 class="button btn-navigate-form-step"
                 type="button"
                 step_number="3"
               >
-                Next
+                Selanjutnya
               </button>
             </div>
           </section>
           <!-- Step 3 Content, default hidden on page load. -->
           <section id="step-3" class="form-step d-none">
-            <h2 class="font-normal">Personal Details</h2>
+            <h2 class="font-normal">Pembayaran</h2>
             <!-- Step 3 input fields -->
-            <div class="mt-3">Step 3 input fields goes here..</div>
+            <div class="mt-3">Pembayaranberhasil dilakukan...</div>
             <div class="mt-3">
               <button
                 class="button btn-navigate-form-step"
                 type="button"
                 step_number="2"
               >
-                Prev
+                Sebelumnya
               </button>
-              <button class="button submit-btn" type="submit">Save</button>
+              <button class="button submit-btn" type="submit">Selesai</button>
             </div>
           </section>
         </form>
