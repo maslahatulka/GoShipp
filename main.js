@@ -1,1 +1,3 @@
-document.querySelector("#navbar").innerHTML = ``;
+import SetupNavbar from "./src/components/navbar";
+
+SetupNavbar();
