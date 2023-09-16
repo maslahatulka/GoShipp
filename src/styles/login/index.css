@@ -43,6 +43,7 @@
 .form__box {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .form__input {

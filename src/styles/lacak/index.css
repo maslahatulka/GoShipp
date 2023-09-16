@@ -21,7 +21,6 @@
   padding: 0 60px;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .track__image {
@@ -78,7 +77,7 @@
   transition: all 0.3s;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .track {
     flex-direction: column;
   }
@@ -90,4 +89,4 @@
   .track__description {
     width: 100%;
   }
-}
+} */
