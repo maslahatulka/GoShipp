@@ -1,3 +1,1 @@
-import SetupNavbar from "./src/components/navbar";
-
-SetupNavbar();
+document.getElementById("kirim").innerText = localStorage.getItem("email");
