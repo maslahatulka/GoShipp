@@ -5,7 +5,6 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: "build",
     rollupOptions: {
       input: {
         index: "index.html",
