@@ -3,13 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/src/styles/login/index.css" />
     <link rel="stylesheet" href="/src/styles/global.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <nav class="navbar">
@@ -17,12 +13,12 @@
 
       <ul class="navbar__menu">
         <a href="/" class="navbar__menu-item">Beranda</a>
-        <a href="/tentang" class="navbar__menu-item">Tentang</a>
-        <a href="/layanan" class="navbar__menu-item">Layanan</a>
-        <a href="/cek-harga" class="navbar__menu-item">Cek Harga</a>
-        <a href="/lacak" class="navbar__menu-item">Lacak Paket</a>
-        <a href="/contact" class="navbar__menu-item">Hubungi Kami</a>
-        <a href="#" class="navbar__menu-item">KIRIM SEKARANG</a>
+        <a href="/tentang/" class="navbar__menu-item">Tentang</a>
+        <a href="/layanan/" class="navbar__menu-item">Layanan</a>
+        <a href="/cek-harga/" class="navbar__menu-item">Cek Harga</a>
+        <a href="/lacak/" class="navbar__menu-item">Lacak Paket</a>
+        <a href="/contact/" class="navbar__menu-item">Hubungi Kami</a>
+        <a href="#" class="navbar__menu-item" id="kirim">KIRIM SEKARANG</a>
       </ul>
     </nav>
 
@@ -31,7 +27,7 @@
     </header>
 
     <section class="login">
-      <form class="login__form">
+      <form class="login__form" id="login">
         <div class="form__box">
           <label class="form__label" for="email">Email</label>
           <input
@@ -42,7 +38,6 @@
             placeholder="Email"
             required
           />
-          <i class="bx bxs-user"></i>
         </div>
 
         <div class="form__box">
@@ -55,7 +50,6 @@
             placeholder="password"
             required
           />
-          <i class="bx bxs-lock"></i>
         </div>
 
         <div class="remember-forgot">
@@ -212,5 +206,6 @@
       </section>
       <section class="footer__form"><h1>#GoShippinAaja</h1></section>
     </footer>
+    <script type="module" src="/src/functions/modules/login.js"></script>
   </body>
 </html>
