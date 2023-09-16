@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cek Harga | GoShipp</title>
-    <link rel="stylesheet" href="/src/styles/cek-harga/index.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/register/register.css" />
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
@@ -15,67 +15,99 @@
         <a href="/" class="navbar__menu-item">Beranda</a>
         <a href="/tentang" class="navbar__menu-item">Tentang</a>
         <a href="/layanan" class="navbar__menu-item">Layanan</a>
-        <a href="/cek-harga/" class="navbar__menu-item">Cek Harga</a>
+        <a href="/cek-harga" class="navbar__menu-item">Cek Harga</a>
         <a href="/lacak" class="navbar__menu-item">Lacak Paket</a>
         <a href="/contact" class="navbar__menu-item">Hubungi Kami</a>
         <a href="#" class="navbar__menu-item">KIRIM SEKARANG</a>
       </ul>
     </nav>
 
-    <header class="header">
-      <section class="header__image">
-        <img src="/src/assets/price/priceLogo.svg" alt="logo price" />
-      </section>
-      <section class="header__information">
-        <h1 class="information__title">Ongkir Hemat</h1>
-        <p class="information__description">
-          Dengan pengiriman yang lebih cepat #GoShippinAja
-        </p>
-      </section>
+    <header class="header__register">
+      <h1>Register</h1>
     </header>
 
-    <section class="container">
-      <h1>Cek Harga</h1>
-
-      <form class="form">
-        <div class="form__box">
-          <label for="asal">Asal</label>
+    <section class="register">
+      <form class="register__form">
+        <div class="register__box">
+          <label class="register__form-label" for="name">Name</label>
           <input
-            required
+            class="register__form-input"
             type="text"
-            id="asal"
-            name="asal"
-            placeholder="Masukkan asal pengiriman"
-          />
-        </div>
-
-        <div class="form__box">
-          <label for="tujuan">Tujuan</label>
-          <input
-            required
-            type="text"
-            id="tujuan"
-            name="tujuan"
-            placeholder="Masukkan tujuan pengiriman"
-          />
-        </div>
-
-        <div class="form__box">
-          <label for="berat">Berat</label>
-          <input
-            type="number"
-            id="berat"
-            name="kg"
-            placeholder="Masukkan berat barang"
+            name="name"
+            id="name"
+            placeholder="Name"
             required
           />
-        </div>
 
-        <button type="submit" class="form__button">Cek Harga</button>
+          <div class="register__box">
+            <label class="register__form-label" for="phone number"
+              >Phone Number</label
+            >
+            <input
+              class="register__form-input"
+              type="text"
+              name="phone number"
+              id="phone number"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+
+          <div class="register__box">
+            <label class="register__form-label" for="email addres"
+              >Email Addres</label
+            >
+            <input
+              class="register__form-input"
+              type="text"
+              name="email addres"
+              id="email addres"
+              placeholder="Email Addres"
+              required
+            />
+          </div>
+
+          <div class="register__box">
+            <label class="register__form-label" for="password">Password</label>
+            <input
+              class="register__form-input"
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="register__box">
+            <label class="register__form-label" for="password"
+              >Confirm Password</label
+            >
+            <input
+              class="register__form-input"
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="accept">
+            <label for="input">
+              <input type="checkbox" />I accept all terms & condition</label
+            >
+          </div>
+
+          <button type="submit" class="submit__register">Register</button>
+
+          <div class="massage__link">
+            <p class="massage">
+              Already registered? <a href="/login">Sign In</a>
+            </p>
+          </div>
+        </div>
       </form>
     </section>
-
-    <section id="result"></section>
 
     <footer class="footer">
       <section class="footer__name">
@@ -218,6 +250,5 @@
       </section>
       <section class="footer__form"><h1>#GoShippinAaja</h1></section>
     </footer>
-    <script src="/src/javascript/modules/sendForm.js"></script>
   </body>
 </html>

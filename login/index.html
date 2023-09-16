@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cek Harga | GoShipp</title>
-    <link rel="stylesheet" href="/src/styles/cek-harga/index.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/login/index.css" />
     <link rel="stylesheet" href="/src/styles/global.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -15,67 +19,57 @@
         <a href="/" class="navbar__menu-item">Beranda</a>
         <a href="/tentang" class="navbar__menu-item">Tentang</a>
         <a href="/layanan" class="navbar__menu-item">Layanan</a>
-        <a href="/cek-harga/" class="navbar__menu-item">Cek Harga</a>
+        <a href="/cek-harga" class="navbar__menu-item">Cek Harga</a>
         <a href="/lacak" class="navbar__menu-item">Lacak Paket</a>
         <a href="/contact" class="navbar__menu-item">Hubungi Kami</a>
         <a href="#" class="navbar__menu-item">KIRIM SEKARANG</a>
       </ul>
     </nav>
 
-    <header class="header">
-      <section class="header__image">
-        <img src="/src/assets/price/priceLogo.svg" alt="logo price" />
-      </section>
-      <section class="header__information">
-        <h1 class="information__title">Ongkir Hemat</h1>
-        <p class="information__description">
-          Dengan pengiriman yang lebih cepat #GoShippinAja
-        </p>
-      </section>
+    <header class="header__login">
+      <h1>Login</h1>
     </header>
 
-    <section class="container">
-      <h1>Cek Harga</h1>
-
-      <form class="form">
+    <section class="login">
+      <form class="login__form">
         <div class="form__box">
-          <label for="asal">Asal</label>
+          <label class="form__label" for="username">Username</label>
           <input
-            required
+            class="form__input"
             type="text"
-            id="asal"
-            name="asal"
-            placeholder="Masukkan asal pengiriman"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
           />
+          <i class="bx bxs-user"></i>
         </div>
 
         <div class="form__box">
-          <label for="tujuan">Tujuan</label>
+          <label class="form__label" for="password">Password</label>
           <input
-            required
-            type="text"
-            id="tujuan"
-            name="tujuan"
-            placeholder="Masukkan tujuan pengiriman"
-          />
-        </div>
-
-        <div class="form__box">
-          <label for="berat">Berat</label>
-          <input
-            type="number"
-            id="berat"
-            name="kg"
-            placeholder="Masukkan berat barang"
+            class="form__input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
             required
           />
+          <i class="bx bxs-lock"></i>
         </div>
 
-        <button type="submit" class="form__button">Cek Harga</button>
+        <div class="remember-forgot">
+          <label for="input"> <input type="checkbox" />Remember Me</label>
+          <a href="#">Forgot Password ?</a>
+        </div>
+
+        <button type="submit" class="form__button">Login</button>
+
+        <div class="register__link">
+          <p>Dont have an account? <a href="/register">Register</a></p>
+        </div>
       </form>
     </section>
-
-    <section id="result"></section>
 
     <footer class="footer">
       <section class="footer__name">
@@ -218,6 +212,5 @@
       </section>
       <section class="footer__form"><h1>#GoShippinAaja</h1></section>
     </footer>
-    <script src="/src/javascript/modules/sendForm.js"></script>
   </body>
 </html>
