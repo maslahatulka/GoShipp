@@ -15,39 +15,15 @@
   --text-7xl: 4.5rem;
   --text-8xl: 6rem;
   --text-9xl: 8rem;
-}
-
-/* start style about */
-.header__about {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__about-logo {
-  width: 65%;
-}
-
-.header__about-logo img {
-  width: 100%;
-}
-
-.header__about-description {
-  background-color: var(--primary);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 50px;
-  width: 35%;
-}
-
-.header__about-description h1 {
-  margin-bottom: 20px;
-  font-size: var(--text-5xl);
-}
-
-.header__about-description p {
-  font-size: var(--text-2xl);
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font--light: 300;
+  --font--normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
 }
 
 .about {
@@ -67,36 +43,52 @@
   font-size: var(--text-xl);
 }
 
+.management {
+  margin: 50px 0;
+}
+
 .management h1 {
   text-align: center;
   padding: 50px;
-  font-size: var(--text-2xl);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
 }
 
 .management__cards {
-  display: flex;
-  justify-content: center;
-  padding: 60px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
-
 .management__card {
-  box-shadow: 0 4px 8px 0;
-  transition: 0.3s;
-  border-radius: 10px;
-  padding: 5px;
-  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .management__card img {
-  border-radius: 10px;
-}
-.management__card:hover {
-  box-shadow: 10px 10px 5px var(--primary);
+  width: 100%;
 }
 
 .management__card-text {
-  text-align: center;
-  padding: 20px 0px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-/* end style about */
+
+.management__card-text h4 {
+  font-size: var(--text-2xl);
+  color: var(--primary);
+}
+
+.management__card-text p {
+  font-size: var(--text-xl);
+  opacity: 0.7;
+  font-weight: var(--font-semibold);
+}
+
+.management__link svg {
+  width: 50px;
+  color: var(--primary);
+}

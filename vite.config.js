@@ -9,7 +9,6 @@ export default defineConfig({
       input: {
         index: "index.html",
         "cek-harga": "cek-harga/index.html",
-        contact: "contact/index.html",
         lacak: "lacak/index.html",
         tentang: "tentang/index.html",
         login: "login/index.html",

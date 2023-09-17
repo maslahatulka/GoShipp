@@ -1,4 +1,6 @@
-// document.getElementById("kirim").innerText = localStorage.getItem("email");
+import { displayTeams } from "/src/modules/displayTeams";
+
+displayTeams(document.querySelector(".management__cards"));
 
 const hamburgerELement = document.querySelector(".hamburger__button");
 const closeELement = document.querySelector(".close__button");
