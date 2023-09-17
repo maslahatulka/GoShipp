@@ -3,7 +3,7 @@ import { teams } from "../constant/teams";
 export const displayTeams = (element) => {
   teams.map(({ name, role, linkedin }) => {
     return (element.innerHTML += `<div class="management__card">
-      <img src="/src/assets/tentang/avatar1.svg" alt="" />
+      <img src="/avatar.svg" alt="Avatar image" />
 
       <div class="management__card-text">
         <h4>${name}</h4>
