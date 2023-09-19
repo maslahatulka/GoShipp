@@ -1,6 +1,8 @@
 import { displayTeams } from "/src/modules/displayTeams";
+import { displayFooter } from "/src/modules/displayFooter";
 
-displayTeams(document.querySelector(".management__cards"));
+// displayTeams(document.querySelector(".management__cards"));
+displayFooter(document.querySelector(".footer"));
 
 const hamburgerELement = document.querySelector(".hamburger__button");
 const closeELement = document.querySelector(".close__button");

@@ -24,26 +24,32 @@
 }
 
 .form {
-  max-width: 700px;
   margin: 0 auto;
-  padding: 50px 10px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: 700px;
 }
 
 .form__box {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .form__box input {
-  width: 100%;
   padding: 20px;
   border-radius: 8px;
   outline: none;
   font-size: var(--text-xl);
+}
+
+.input__user {
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .form__box label {
@@ -67,6 +73,7 @@
   font-weight: bold;
   font-size: var(--text-xl);
   border-radius: 10px;
+  border: none;
 }
 
 .form__button:hover {

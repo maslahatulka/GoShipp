@@ -55,24 +55,41 @@
       <form class="form">
         <div class="form__box">
           <label for="asal">Asal</label>
-          <input
+          <!-- <input
             required
             type="text"
             id="asal"
             name="asal"
             placeholder="Masukkan asal pengiriman"
-          />
+          /> -->
+          <select class="input__user">
+            <option value="0">Asal</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Bali">Bali</option>
+            <option value="Palembang">Palembang</option>
+            <option value="Lombok">Lombok</option>
+          </select>
         </div>
 
         <div class="form__box">
           <label for="tujuan">Tujuan</label>
-          <input
+          <!-- <input
             required
             type="text"
             id="tujuan"
             name="tujuan"
             placeholder="Masukkan tujuan pengiriman"
-          />
+          /> -->
+
+          <select class="input__user">
+            <option value="0">Tujuan</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Bali">Bali</option>
+            <option value="Palembang">Palembang</option>
+            <option value="Lombok">Lombok</option>
+          </select>
         </div>
 
         <div class="form__box">
@@ -80,8 +97,8 @@
           <input
             type="number"
             id="berat"
-            name="kg"
-            placeholder="Masukkan berat barang"
+            name="berat"
+            placeholder="Masukkan berat barang (KG)"
             required
           />
         </div>
