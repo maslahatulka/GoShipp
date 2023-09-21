@@ -33,10 +33,10 @@ To run this project, follow this step:
 
 ```
 # Clone this repository
-$ git clone https://github.com/dennyshuda/jobhunt.git
+$ git clone https://github.com/maslahatulka/GoShipp
 
 # Go into repository
-$ cd GoShipp https://github.com/maslahatulka/GoShipp
+$ cd GoShipp
 
 # Install dependencies
 $ npm i or npm install
