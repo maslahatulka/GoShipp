@@ -45,30 +45,242 @@
       <form id="multi-step-form" class="form">
         <div class="form-step" data-step="1">
           <section class="form-step__box">
-            <h2 class="sender__label">Detail Pengiriman</h2>
-            <div class="sender__divider"></div>
+            <h2 class="label">Detail Pengirim</h2>
+            <div class="divider"></div>
 
             <div class="box">
-              <label class="box__label" for="nama_pengirim">Nama Pengirim</label>
-              <input class="box__input" type="text" name="nama_pengirim" required />
+              <label class="box__label" for="nama_pengirim"
+                >Nama Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nama_pengirim"
+                id="nama_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="alamat_pengirim"
+                >Alamat Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="alamat_pengirim"
+                id="alamat_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="nomor_pengirim"
+                >Nomor Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nomor_pengirim"
+                id="nomor_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="email_pengirim"
+                >Email Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="email"
+                name="email_pengirim"
+                id="email_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="detail_lokasi_pengirim"
+                >Detail Lokasi</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="detail_lokasi_pengirim"
+                id="detail_lokasi_pengirim"
+                required
+              />
             </div>
           </section>
-          <button type="button" class="next-step">Next</button>
+
+          <section class="form-step__box">
+            <h2 class="label">Detail Penerima</h2>
+            <div class="divider"></div>
+
+            <div class="box">
+              <label class="box__label" for="nama_penerima"
+                >Nama Penerima</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nama_penerima"
+                id="nama_penerima"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="alamat_penerima"
+                >Alamat Penerima</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="alamat_penerima"
+                id="alamat_penerima"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="nomor_penerima"
+                >Nomor Penerima</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nomor_penerima"
+                id="nomor_penerima"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="detail_lokasi_penerima"
+                >Detail Lokasi</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="detail_lokasi_penerima"
+                id="detail_lokasi_penerima"
+                required
+              />
+            </div>
+          </section>
+
+          <section class="form-step__box">
+            <h2 class="label">Detail Barang</h2>
+            <div class="divider"></div>
+
+            <div class="box">
+              <label class="box__label" for="ukuran_paket">Ukuran Paket</label>
+              <input
+                class="box__input"
+                type="number"
+                name="ukuran_paket"
+                id="ukuran_paket"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="tipe">Tipe Layanan</label>
+
+              <select class="box__option" name="tipe_layanan" id="tipe_layanan">
+                <option value="0">Tipe Layanan</option>
+                <option value="GoShipp Someday">GoShipp Someday</option>
+                <option value="Instant GoShipp">Instant GoShipp</option>
+                <option value="GoShippBix">GoShippBix</option>
+              </select>
+            </div>
+          </section>
+
+          <button type="button" class="next-step">Selanjutnya</button>
         </div>
 
         <div class="form-step" data-step="2">
-          <h2 class="form-step__label">Step 2: Address Information</h2>
-          <button type="button" class="prev-step">Previous</button>
-          <button type="button" class="next-step">Next</button>
+          <section class="form-step__box">
+            <h1 class="label">Ringkasan</h1>
+            <div class="divider"></div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Detail Pengirim</h2>
+              <hr />
+
+              <section class="detail__sender">
+                <div class="detail__sender-left">
+                  <h3>Pengirim :</h3>
+                  <h3>No. Telepon :</h3>
+                  <h3>Email :</h3>
+                </div>
+
+                <div class="detail__sender-right">Alamat Pengirim :</div>
+              </section>
+            </div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Detail Penerima</h2>
+              <hr />
+
+              <section class="detail__receiver">
+                <div class="detail__receiver-left">
+                  <h3>Penerima :</h3>
+                  <h3>No. Telepon :</h3>
+                </div>
+
+                <div class="detail__receiver-right">Alamat Penerima :</div>
+              </section>
+            </div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Detail Paket</h2>
+              <hr />
+
+              <section class="detail__package">
+                <div class="detail__package-left">
+                  <h3>Ukuran Paket :</h3>
+                  <h3>Tipe Layanan :</h3>
+                </div>
+              </section>
+            </div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Pembayaran</h2>
+              <hr />
+
+              <section class="detail__payment">
+                <div class="detail__payment-left">
+                  <h3>Total Pengiriman :</h3>
+                  <h3>Fraggle :</h3>
+                  <hr />
+                  <h3>Total Pembayaran:</h3>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <button type="button" class="prev-step">Kembali</button>
+          <button type="button" class="next-step">Selanjutnya</button>
         </div>
 
         <div class="form-step" data-step="3">
-          <h2 class="form-step__label">Step 3: Confirmation</h2>
-          <button type="button" class="prev-step">Previous</button>
-          <button type="submit">Submit</button>
+          <section class="form-step__box">
+            <h2 class="label">Konfirmasi</h2>
+            <div class="divider"></div>
+            <div class="box">
+              <h2>PEMBAYARAN BERHASIL !!</h2>
+              <h1>Cek pesasnanmu saat datang</h1>
+            </div>
+          </section>
+          <button type="button" class="prev-step">Kembali</button>
+          <button type="submit" class="next-step">Selesai</button>
         </div>
       </form>
     </section>
+    <footer class="footer"></footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("multi-step-form");
@@ -109,13 +321,81 @@
           });
         });
 
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          // Handle form submission here
+        form.addEventListener("change", () => {
+          //Value Pengirim
+          const namaPengirimValueElement =
+            document.getElementById("nama_pengirim").value;
+          const alamatPengirimValueElement =
+            document.getElementById("alamat_pengirim").value;
+          const nomorPengirimValueElement =
+            document.getElementById("nomor_pengirim").value;
+          const emailPengirimValueElement =
+            document.getElementById("email_pengirim").value;
+          const detailLokasiPengirimValueElement = document.getElementById(
+            "detail_lokasi_pengirim"
+          ).value;
+          //Value Penerima
+          const namaPenerimaValueElement =
+            document.getElementById("nama_penerima").value;
+          const alamatPenerimaValueElement =
+            document.getElementById("alamat_penerima").value;
+          const nomorPenerimaValueElement =
+            document.getElementById("nomor_penerima").value;
+          const detailLokasiPenerimaValueElement = document.getElementById(
+            "detail_lokasi_penerima"
+          ).value;
+          //Value Detail Paket
+          const ukuranPaketValueElement =
+            document.getElementById("ukuran_paket").value;
+          const tipeLayananValueElement =
+            document.getElementById("tipe_layanan").value;
+
+          // Pembatas
+          const detailSenderElement = document.querySelector(".detail__sender");
+
+          detailSenderElement.innerHTML = `
+          <div
+              class="detail__sender-left"
+            >
+              <h3>Pengirim : ${namaPengirimValueElement}</h3>
+              <h3>No. Telepon : ${nomorPengirimValueElement}</h3>
+              <h3>Email : ${emailPengirimValueElement}</h3>
+            </div>
+
+            <div class="detail__sender-right">Alamat Pengirim : ${alamatPengirimValueElement}</div>`;
+
+          const detailReceiverElement =
+            document.querySelector(".detail__receiver");
+
+          detailReceiverElement.innerHTML = `
+          <div
+              class="detail__receiver-left"
+            >
+              <h3>Nama Penerima : ${namaPenerimaValueElement}</h3>
+              <h3>No. Telepon : ${nomorPenerimaValueElement}</h3>
+            </div>
+
+            <div class="detail__receiver-right">Alamat Penerima : ${alamatPenerimaValueElement}</div>`;
+
+          const detailPackageElement =
+            document.querySelector(".detail__package");
+          detailPackageElement.innerHTML = `
+          <div
+            class="detail__package-left"
+          >
+            <h3>Ukuran Paket : ${ukuranPaketValueElement} Kg</h3>
+            <h3>Tipe Layanan : ${tipeLayananValueElement}</h3>
+          </div>`;
+        });
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          console.log("hai");
         });
 
         showStep(currentStep);
       });
     </script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
