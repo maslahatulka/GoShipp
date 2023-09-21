@@ -1,5 +1,6 @@
 import { displayTeams } from "/src/modules/displayTeams";
 import { displayFooter } from "/src/modules/displayFooter";
+import { rupiah } from "./src/helpers/rupiah";
 
 displayFooter(document.querySelector(".footer"));
 
@@ -41,27 +42,20 @@ if (window.location.pathname.split("/")[1] === "cek-harga") {
 
     const total = berat * 10000;
 
-    document.getElementById("result").innerHTML = `<section class="modal">
-      <button id="close_modal">close</button>
-      <h1>Harga Ongkir</h1>
-      <div>
-        <p>Asal: ${asal}</p>
-        <p>Tujuan: ${tujuan}</p>
-        <p>Berat: ${berat} kg</p>
+    document.getElementById("result").innerHTML = ` <div class="modal-background">
+      <div class="modal">
+        <span class="modal__close" id="closeModal">&times;</span>
+        <p class="modal__title">Cek Ongkir</p>
+        <p class="modal__sub">Asal: ${asal}</p>
+        <p class="modal__sub">Tujuan: ${tujuan}</p>
+        <p class="modal__sub">Berat: ${berat} Kg</p>
+        <p class="modal__total">${rupiah(total)}</p>
       </div>
-      <h1>Rp. ${total}</h1>
-    </section>`;
+    </div>`;
+
+    const buttonCloseElement = document.querySelector(".modal__close");
+    buttonCloseElement.addEventListener("click", () => {
+      document.querySelector(".modal-background").style.display = "none";
+    });
   });
 }
-
-const buttonCloseElement = document.getElementById("close_modal");
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   buttonCloseElement.addEventListener("click", () => console.log("hola"));
-// });
-
-window.addEventListener("load", () => {
-  buttonCloseElement.addEventListener("click", () => {
-    console.log("hai");
-  });
-});

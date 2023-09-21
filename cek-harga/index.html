@@ -47,9 +47,7 @@
       </section>
       <section class="header__information">
         <h1 class="information__title">Ongkir Hemat</h1>
-        <p class="information__description">
-          Dengan pengiriman yang lebih cepat #GoShippinAja
-        </p>
+        <p class="information__description">Dengan pengiriman yang lebih cepat #GoShippinAja</p>
       </section>
     </header>
 
@@ -59,13 +57,6 @@
       <form class="form">
         <div class="form__box">
           <label for="asal">Asal</label>
-          <!-- <input
-            required
-            type="text"
-            id="asal"
-            name="asal"
-            placeholder="Masukkan asal pengiriman"
-          /> -->
           <select class="input__user" name="asal">
             <option value="0">Asal</option>
             <option value="Jakarta">Jakarta</option>
@@ -78,13 +69,6 @@
 
         <div class="form__box">
           <label for="tujuan">Tujuan</label>
-          <!-- <input
-            required
-            type="text"
-            id="tujuan"
-            name="tujuan"
-            placeholder="Masukkan tujuan pengiriman"
-          /> -->
 
           <select class="input__user" name="tujuan">
             <option value="0">Tujuan</option>
@@ -103,6 +87,7 @@
             id="berat"
             name="berat"
             placeholder="Masukkan berat barang (KG)"
+            min="1"
             required
           />
         </div>
@@ -112,16 +97,6 @@
     </section>
 
     <div id="result"></div>
-    <!-- <section class="modal">
-      <button class="close">close</button>
-      <h1>Harga Ongkir</h1>
-      <div>
-        <p>Asal: ${asal}</p>
-        <p>Tujuan: ${tujuan}</p>
-        <p>Berat: ${berat} kg</p>
-      </div>
-      <h1>Rp. ${total}</h1>
-    </section> -->
 
     <footer class="footer"></footer>
     <script type="module" src="/main.js"></script>
