@@ -42,7 +42,9 @@ if (window.location.pathname.split("/")[1] === "cek-harga") {
 
     const total = berat * 10000;
 
-    document.getElementById("result").innerHTML = ` <div class="modal-background">
+    document.getElementById(
+      "result"
+    ).innerHTML = ` <div class="modal-background">
       <div class="modal">
         <span class="modal__close" id="closeModal">&times;</span>
         <p class="modal__title">Cek Ongkir</p>
@@ -79,3 +81,65 @@ if (window.location.pathname.split("/")[1] === "register") {
       .then(console.log);
   });
 }
+
+if (window.location.pathname.split("/")[1] === "login") {
+  const loginFormElement = document.querySelector(".login__form");
+
+  loginFormElement.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const data = new FormData(loginFormElement);
+
+    try {
+      const response = await fetch("https://dummyjson.com/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: data.get("username"),
+          password: data.get("password"),
+        }),
+      });
+
+      if (response.ok) {
+        const responseData = await response.json();
+        localStorage.setItem("token", responseData.token);
+        window.location.href = "/kirim/";
+      } else {
+        console.error("Failed to log in. Status code:", response.status);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  });
+}
+
+const protectedRoutes = {
+  "/kirim/": true,
+};
+
+function isAuthenticated() {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    window.location.href = "/login/";
+  }
+}
+
+function router() {
+  const path = window.location.pathname;
+  const isProtected = Object.keys(protectedRoutes).includes(path);
+  if (isProtected) {
+    isAuthenticated();
+  }
+
+  const routeFunction = () => protectedRoutes[path];
+
+  if (routeFunction) {
+    routeFunction();
+  }
+}
+
+window.onload = router;
+window.onpopstate = router;
+
+// document.querySelector(".navbar__auth-logout").addEventListener("click", () => {
+//   localStorage.removeItem("token");
+// });
