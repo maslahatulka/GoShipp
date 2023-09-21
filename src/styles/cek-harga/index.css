@@ -82,3 +82,13 @@
   border: 2px solid var(--primary);
   transition: all 0.3s;
 }
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
