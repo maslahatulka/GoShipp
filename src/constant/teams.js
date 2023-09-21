@@ -2,7 +2,7 @@ export const teams = [
   {
     name: "Anies Aulia Handi",
     role: "Project Leader",
-    linkedin: "https://example.com",
+    linkedin: "https://www.linkedin.com/in/anies-aulia-663440200/",
   },
   {
     name: "Maslahatul Kaunaini A",
@@ -12,12 +12,12 @@ export const teams = [
   {
     name: "Gabriel Olivia Y.M",
     role: "Quality Assurance",
-    linkedin: "https://example.com",
+    linkedin: "https://www.linkedin.com/in/gabrieloliviayvonnemanurung",
   },
   {
     name: "Elang Dennys Dhamara",
     role: "Back-end Developer",
-    linkedin: "https://example.com",
+    linkedin: "https://www.linkedin.com/in/elang-dennys-1462b8190/",
   },
   {
     name: "M. Rizqy Ananda",
