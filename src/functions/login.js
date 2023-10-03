@@ -1,15 +1,34 @@
-const loginFormElement = document.getElementById("login");
-const sendButtonElement = document.getElementById("kirim");
-const navbarMenu = document.querySelector(".navbar__menu");
+const login = () => {
+  if (window.location.pathname.split("/")[1] === "login") {
+    const loginFormElement = document.querySelector(".login__form");
 
-loginFormElement.addEventListener("submit", (event) => {
-  event.preventDefault();
+    loginFormElement.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const data = new FormData(loginFormElement);
 
-  const data = new FormData(loginFormElement);
-  const email = data.get("email");
-  const password = data.get("password");
+      try {
+        const response = await fetch("https://dummyjson.com/auth/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            username: data.get("username"),
+            password: data.get("password"),
+          }),
+        });
 
-  window.location.replace("/kirim/");
+        if (response.ok) {
+          const responseData = await response.json();
+          console.log(responseData);
+          localStorage.setItem("token", responseData.token);
+          window.location.href = "/kirim/";
+        } else {
+          console.error("Failed to log in. Status code:", response.status);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    });
+  }
+};
 
-  localStorage.setItem("email", email);
-});
+export default login;
