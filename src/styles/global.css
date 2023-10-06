@@ -237,6 +237,14 @@ body {
   color: var(--primary);
 }
 
+.navbar__auth-logout {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 30px;
+  border: 2px solid var(--primary);
+  display: none;
+}
+
 .hamburger__button,
 .close__button {
   display: none;
