@@ -17,6 +17,8 @@ class NavComponent extends HTMLElement {
                 <a href="/login/" class="navbar__auth-login">Login</a>
                 <a href="/register/" class="navbar__auth-register">Register</a>
             </div>
+            
+            <button class="navbar__auth-logout" type="button">Logout</button>
 
             <div>
                 <button class="hamburger__button">
