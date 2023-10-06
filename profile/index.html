@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/profile/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav-component></nav-component>
+
+    <section class="profile container">
+      <h1 class="profile__title">Lengkapi data diri anda</h1>
+
+      <div class="profile__content">
+        <section class="profile__image">
+          <img
+            src="/src/assets/beranda/imageTestimonial6.svg"
+            alt="user image"
+          />
+          <button>Tambahkan foto</button>
+        </section>
+
+        <section class="profile__identity">
+          <form class="profile__form">
+            <div class="box">
+              <label class="box__label" for="fullname">Nama Lengkap</label>
+              <input
+                class="box__input"
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Masukkan nama lengkap"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="password">Nomor Telepon</label>
+              <input
+                class="box__input"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Masukkan nomor telepon"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="password">Email</label>
+              <input
+                class="box__input"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Masukkan email"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="password">Alamat</label>
+              <input
+                class="box__input"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Masukkan alamat lengkap"
+                required
+              />
+            </div>
+
+            <button type="button" class="prev-step">Cancel</button>
+            <button type="submit" class="next-step">Save</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <footer-component></footer-component>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
