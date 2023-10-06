@@ -15,6 +15,7 @@ export default defineConfig({
         register: "register/index.html",
         layanan: "layanan/index.html",
         kirim: "kirim/index.html",
+        profile: "profile/index.html",
       },
     },
   },
