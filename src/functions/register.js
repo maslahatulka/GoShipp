@@ -5,11 +5,11 @@ const register = () => {
       event.preventDefault();
       const data = new FormData(registerFormElement);
 
-      fetch("https://dummyjson.com/users/add", {
+      fetch("https://be-palembang-21-production.up.railway.app/new", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          username: data.get("name"),
+          username: data.get("username"),
           password: data.get("password"),
           email: data.get("email"),
         }),

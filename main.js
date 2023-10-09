@@ -16,4 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   register();
   login();
   setupRouter();
+  fetch("https://be-palembang-21-production.up.railway.app")
+    .then((res) => res.json())
+    .then((json) => console.log(json));
 });
