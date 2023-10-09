@@ -14,10 +14,11 @@
   <body>
     <nav-component></nav-component>
 
-    <section class="track">
+    <section class="track container">
       <div class="track__image">
         <img src="/src/assets/lacakImage.svg" alt="image for lacak" />
       </div>
+
       <div class="track__description">
         <h1>Lacak Pengiriman</h1>
         <p>
@@ -26,12 +27,20 @@
           otomatis terurut,
         </p>
 
-        <form class="form">
-          <textarea name="track" id="track"></textarea>
+        <form class="form__track">
+          <textarea
+            name="track"
+            id="track"
+            class="form__track-textarea"
+          ></textarea>
 
-          <button type="submit" class="form__button">Lacak Pengiriman</button>
+          <button type="submit" class="form__track-button">
+            Lacak Pengiriman
+          </button>
         </form>
       </div>
+
+      <div id="result"></div>
     </section>
 
     <footer-component></footer-component>
