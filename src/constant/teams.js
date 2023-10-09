@@ -22,7 +22,7 @@ export const teams = [
   {
     name: "M. Rizqy Ananda",
     role: "Back-end Developer",
-    linkedin: "https://example.com",
+    linkedin: "https://www.linkedin.com/in/mrizqyananda",
   },
   {
     name: "Denny Setyawan Huda",
