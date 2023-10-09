@@ -9,6 +9,7 @@ import checkPrice from "./src/functions/checkPrice";
 import register from "./src/functions/register";
 import login from "./src/functions/login";
 import setupRouter from "./src/routes";
+import track from "./src/functions/track";
 
 document.addEventListener("DOMContentLoaded", () => {
   navigationBar();
@@ -16,7 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
   register();
   login();
   setupRouter();
-  fetch("https://be-palembang-21-production.up.railway.app")
-    .then((res) => res.json())
-    .then((json) => console.log(json));
+  track();
 });
