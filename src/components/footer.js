@@ -34,7 +34,7 @@ class FooterComponent extends HTMLElement {
           fill="#4540db"
         />
       </svg>
-      <p>GoShipp21@hello.com</p>
+      <p>goshipp.id@gmail.com</p>
     </div>
 
     <div class="footer__address-box">
@@ -50,7 +50,8 @@ class FooterComponent extends HTMLElement {
     </div>
   </section>
   <section class="footer__contact">
-    <a href="/">
+    <a href="https://www.facebook.com/profile.php?id=61552166397693&mibextid=ZbWKwL
+    ">
       <svg
         width="40"
         height="40"
@@ -68,7 +69,8 @@ class FooterComponent extends HTMLElement {
       </svg>
     </a>
 
-    <a href="/">
+    <a href="https://www.linkedin.com/company/goshipp/
+    ">
       <svg
         width="40"
         height="40"
@@ -84,7 +86,8 @@ class FooterComponent extends HTMLElement {
       </svg>
     </a>
 
-    <a href="/">
+    <a href="https://instagram.com/goshipp.id?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==
+    ">
       <svg
         width="40"
         height="40"
@@ -103,7 +106,8 @@ class FooterComponent extends HTMLElement {
         />
       </svg>
     </a>
-    <a href="/">
+    <a href="https://x.com/Goshipp_id?t=AV_6qWCG12EoIXtJO814Sg&s=09
+    ">
       <svg
         width="40"
         height="40"
