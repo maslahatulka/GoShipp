@@ -14,16 +14,17 @@
   <body>
     <nav-component></nav-component>
 
-    <section class="profile container">
-      <h1 class="profile__title">Lengkapi data diri anda</h1>
+    <h1 class="profile__title container">Lengkapi data diri anda</h1>
 
+    <section class="profile container">
       <div class="profile__content">
         <section class="profile__image">
           <img
             src="/src/assets/beranda/imageTestimonial6.svg"
             alt="user image"
+            id="image-preview"
           />
-          <button>Tambahkan foto</button>
+          <input id="image-input" type="file" accept="image/*" />
         </section>
 
         <section class="profile__identity">
@@ -76,8 +77,7 @@
               />
             </div>
 
-            <button type="button" class="prev-step">Cancel</button>
-            <button type="submit" class="next-step">Save</button>
+            <button type="submit" class="profile__button-submit">Save</button>
           </form>
         </section>
       </div>
@@ -85,5 +85,21 @@
 
     <footer-component></footer-component>
     <script type="module" src="/main.js"></script>
+    <script>
+      const imageInputElement = document.getElementById("image-input");
+      const imagePreviewElement = document.getElementById("image-preview");
+
+      imageInputElement.addEventListener("change", () => {
+        const file = imageInputElement.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            imagePreviewElement.src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    </script>
   </body>
 </html>
