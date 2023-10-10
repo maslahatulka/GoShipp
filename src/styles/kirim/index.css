@@ -169,3 +169,8 @@
 .detail__payment-left > * {
   margin: 10px 0;
 }
+
+.box img {
+  width: 50%;
+  margin: 30px auto;
+}
