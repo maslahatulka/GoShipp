@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "toastify-js": "^1.12.0"
   }
 }
