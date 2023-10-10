@@ -10,6 +10,7 @@ import register from "./src/functions/register";
 import login from "./src/functions/login";
 import setupRouter from "./src/routes";
 import track from "./src/functions/track";
+import send from "./src/functions/send";
 
 document.addEventListener("DOMContentLoaded", () => {
   navigationBar();
@@ -18,4 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
   login();
   setupRouter();
   track();
+  send();
 });
