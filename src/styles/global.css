@@ -243,6 +243,7 @@ body {
   padding: 10px 30px;
   border: 2px solid var(--primary);
   display: none;
+  font-weight: var(--font-semibold);
 }
 
 .hamburger__button,
